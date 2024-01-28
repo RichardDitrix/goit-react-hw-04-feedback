@@ -9,8 +9,7 @@ export const App = () => {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  const total = good + neutral + bad;
-  const positivePercentage = (good * 100) / total;
+  
 
   const onFeedbackClick = optionName => {
     switch (optionName) {
@@ -27,6 +26,9 @@ export const App = () => {
         return;
     }
   };
+
+  const total = good + neutral + bad;
+  const positivePercentage = (good * 100) / total;
 
   return (
     <>
